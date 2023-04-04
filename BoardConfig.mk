@@ -169,10 +169,8 @@ TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_ODM := odm
 TARGET_COPY_OUT_PRODUCT := product
 ifneq ($(IS_GLOBAL),true)
-  BOARD_PREBUILT_VENDORIMAGE := $(CHOPIN_PREBUILT)/vendor/China/vendor.img
   BOARD_PREBUILT_ODMIMAGE := $(CHOPIN_PREBUILT)/base/China/odm.img
 else
-  BOARD_PREBUILT_VENDORIMAGE := $(CHOPIN_PREBUILT)/vendor/Global/vendor.img
   BOARD_PREBUILT_ODMIMAGE := $(CHOPIN_PREBUILT)/base/Global/odm.img
 endif
 
