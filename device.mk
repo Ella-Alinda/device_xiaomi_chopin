@@ -154,7 +154,7 @@ PRODUCT_PACKAGES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    lineage.livedisplay@2.0-service-mediatek
+    vendor.lineage.livedisplay@2.0-service-mediatek
 
 # Location
 PRODUCT_COPY_FILES += \
