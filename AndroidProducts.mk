@@ -16,13 +16,13 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/exthm_chopin.mk \
-    $(LOCAL_DIR)/exthm_choping.mk
+    $(LOCAL_DIR)/lineage_chopin.mk \
+    $(LOCAL_DIR)/lineage_choping.mk
 
 COMMON_LUNCH_CHOICES := \
-    exthm_chopin-user \
-    exthm_chopin-userdebug \
-    exthm_chopin-eng \
-    exthm_choping-user \
-    exthm_choping-userdebug \
-    exthm_choping-eng
+    lineage_chopin-user \
+    lineage_chopin-userdebug \
+    lineage_chopin-eng \
+    lineage_choping-user \
+    lineage_choping-userdebug \
+    lineage_choping-eng

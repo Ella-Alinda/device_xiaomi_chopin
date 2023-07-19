@@ -36,6 +36,9 @@ $(call inherit-product-if-exists, vendor/xiaomi/chopin/chopin-vendor.mk)
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
+# Disable EPPE
+TARGET_DISABLE_EPPE := true
+
 #Suppot to compile recovery without msm headers
 TARGET_HAS_GENERIC_KERNEL_HEADERS := true
 

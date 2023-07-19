@@ -23,13 +23,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/chopin/device.mk)
 
 # Inherit some common Pixel-Experience stuff.
-$(call inherit-product, vendor/exthm/config/common.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := choping
-PRODUCT_NAME := exthm_choping
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := 21061110AG
+PRODUCT_DEVICE := chopin
+PRODUCT_NAME := lineage_chopin
+PRODUCT_BRAND := Redmi
+PRODUCT_MODEL := M2104K10AC
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
