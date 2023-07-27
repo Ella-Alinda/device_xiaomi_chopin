@@ -20,16 +20,6 @@ applications that come with the platform
         <permission name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
     </privapp-permissions>
 
-    <privapp-permissions package="com.mediatek.omacp">
-        <permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
-        <permission name="android.permission.VIBRATE"/>
-        <permission name="android.permission.ACCESS_NETWORK_STATE"/>
-        <permission name="android.permission.READ_PHONE_STATE"/>
-        <permission name="android.permission.WAKE_LOCK"/>
-        <permission name="android.permission.RECEIVE_WAP_PUSH"/>
-        <permission name="android.permission.FOREGROUND_SERVICE"/>
-    </privapp-permissions>
-
     <privapp-permissions package="com.mediatek.autobootcontroller">
         <permission name="android.permission.MANAGE_USERS"/>
     </privapp-permissions>
