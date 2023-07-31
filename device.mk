@@ -69,8 +69,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-service-system
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/bluetooth/audio/config/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/bluetooth_audio_policy_configuration.xml \
-    $(LOCAL_PATH)/bluetooth/audio/config/bluetooth_a2dp_offload_ums_offload_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/bluetooth_a2dp_offload_ums_offload_audio_policy_configuration.xml \
     $(LOCAL_PATH)/bluetooth/audio/config/sysbta_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysbta_audio_policy_configuration.xml \
     $(LOCAL_PATH)/bluetooth/audio/config/sysbta_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysbta_audio_policy_configuration_7_0.xml
 
