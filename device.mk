@@ -131,7 +131,6 @@ PRODUCT_PACKAGES += \
 
 # IMS
 PRODUCT_BOOT_JARS += \
-    ims-common \
     mediatek-carrier-config-manager \
     mediatek-common \
     mediatek-framework \
