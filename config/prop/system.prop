@@ -13,6 +13,9 @@ ro.vendor.cabc.enable=true
 persist.bluetooth.a2dp_offload.disabled=true
 ro.bluetooth.a2dp_offload.supported=false
 
+# Enable system-side generic bluetooth audio HAL
+persist.bluetooth.system_audio_hal.enabled=1
+
 # Blur
 ro.surface_flinger.supports_background_blur=1
 
