@@ -1,65 +1,38 @@
-#
-# from device/xiaomi/chopin/special_ro.prop
-#
-# For special ro override property
-
-#support dual wifi feature
-ro.vendor.net.enable_dual_wifi=1
-
-# prop for cabc
-ro.vendor.cabc.enable=true
+# Audio
+ro.camera.sound.forced=0
+ro.audio.silent=0
+ro.audio.usb.period_us=16000
 
 # Bluetooth
-ro.bluetooth.a2dp_offload.supported=false
 persist.bluetooth.a2dp_offload.disabled=true
-persist.sys.bt.unsupport.features=00000000
-persist.sys.bt.unsupport.states=00000000
-persist.sys.bt.unsupport.stdfeatures=000001
-persist.bluetooth.system_audio_hal.enabled=1
-bluetooth.device.class_of_device=90,2,12
-bluetooth.profile.a2dp.source.enabled=true
-bluetooth.profile.avrcp.target.enabled=true
-bluetooth.profile.bas.client.enabled=true
-bluetooth.profile.gatt.enabled=true
-bluetooth.profile.hfp.ag.enabled=true
-bluetooth.profile.hid.device.enabled=true
-bluetooth.profile.hid.host.enabled=true
-bluetooth.profile.map.server.enabled=true
-bluetooth.profile.opp.enabled=true
-bluetooth.profile.pan.nap.enabled=true
-bluetooth.profile.pan.panu.enabled=true
-bluetooth.profile.pbap.server.enabled=true
-bluetooth.profile.sap.server.enabled=true
-
-# Enable system-side generic bluetooth audio HAL
-persist.bluetooth.system_audio_hal.enabled=1
+ro.bluetooth.a2dp_offload.supported=false
 
 # Blur
 ro.surface_flinger.supports_background_blur=1
+ro.launcher.blur.appLaunch=1
 
-# Disable blur on app launch
-# ro.launcher.blur.appLaunch=1
+# Brand
+Build.BRAND=MTK
 
-# RIL
-# 5g capability(0: not support 1:nsa 2:sa 3: 1+2)
-ro.vendor.radio.5g=3
+# Dalvik
+pm.dexopt.install=speed-profile
+pm.dexopt.bg-dexopt=speed-profile
+pm.dexopt.boot=verify
+pm.dexopt.first-boot=quicken
+pm.dexopt.ab-ota=speed-profile
+dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5
+dalvik.vm.dex2oat-threads=6
+dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5
+dalvik.vm.boot-dex2oat-threads=6
+dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5
+dalvik.vm.image-dex2oat-threads=6
 
-#RIL
-ro.vendor.radio.features_common=2
-vendor.rild.libpath=mtk-ril.so
-vendor.rild.libargs=-d /dev/ttyC0
+# Dex2oat64
+dalvik.vm.dex2oat64.enabled=true
 
-# SLA
-ro.vendor.net.enable_sla=1
-
-# Media
-media.stagefright.thumbnail.prefer_hw_codecs=true
-
-# VRR configs
-ro.surface_flinger.set_touch_timer_ms=1000
-ro.surface_flinger.set_idle_timer_ms=1000
-ro.surface_flinger.set_display_power_timer_ms=1100
-ro.surface_flinger.use_content_detection_for_refresh_rate=true
+# Display
+ro.sf.lcd_density=440
+sys.displayfeature_hidl=true
 debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=0
 debug.sf.early.app.duration=24000000
@@ -78,9 +51,43 @@ debug.sf.high_fps.late.app.duration=10000000
 debug.sf.high_fps.late.sf.duration=13800000
 debug.sf.latch_unsignaled=1
 debug.renderengine.backend=skiaglthreaded
+ro.surface_flinger.set_touch_timer_ms=1000
+ro.surface_flinger.set_idle_timer_ms=1000
+ro.surface_flinger.set_display_power_timer_ms=1100
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
 vendor.display.idle_time=0
 vendor.display.idle_time_inactive=0
 vendor.display.disable_metadata_dynamic_fps=1
+
+# Net
+ro.vendor.net.enable_sla=1
+ro.vendor.net.enable_dual_wifi=1
+
+# RIL
+ro.vendor.mtk_telephony_add_on_policy=0
+ro.vendor.radio.features_common=2
+ro.vendor.radio.5g=3
+vendor.rild.libpath=mtk-ril.so
+vendor.rild.libargs=-d /dev/ttyC0
+
+# Performance
+ro.mtk_perf_simple_start_win=1
+ro.mtk_perf_fast_start_win=1
+ro.mtk_perf_response_time=1
+
+# Storage
+persist.sys.fuse.passthrough.enable=true
+
+# Media
+media.stagefright.thumbnail.prefer_hw_codecs=true
+ro.vendor.mtk_flv_playback_support=1
+vendor.mtk_thumbnail_optimization=true
+
+# Vendor Feature
+ro.vendor.cabc.enable=true
+ro.vendor.mtk_omacp_support=1
+vendor.displayfeature.entry.enable=true
+vendor.hbm.enable=true
 
 # WiFi
 wifi.interface=wlan0
@@ -102,54 +109,33 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
-# MTK vendor
-ro.vendor.mtk_omacp_support=1
-ro.vendor.mtk_flv_playback_support=1
-ro.vendor.mtk_telephony_add_on_policy=0
-
-# audio
-ro.camera.sound.forced=0
-ro.audio.silent=0
-
 # Kernel
 ro.kernel.zio=38,108,105,16
 
-# Display
-ro.sf.lcd_density=440
-sys.displayfeature_hidl=true
+# Keylayout
+qemu.hw.mainkeys=0
 
-# performance
-ro.mtk_perf_simple_start_win=1
-ro.mtk_perf_fast_start_win=1
-ro.mtk_perf_response_time=1
+# Memory
+ro.config.per_app_memcg=false
 
-#logd buffer size
-ro.logd.size=2M
-
-#disable mtk aggressive_dex2oat
-pm.dexopt.aggressive_dex2oat.enable=false
-
-#sysprop for thermal
-vendor.sys.thermal.data.path=/data/vendor/thermal/
-
-# displayfeature and displayfeatureservice use it to debug pq effect
-vendor.displayfeature.entry.enable=true
-
-#system property for HBM mode
-vendor.hbm.enable=true
-
-#system prop for dc backlight
+# Misc
 persist.vendor.dc_backlight.enable=false
-
-#property for display fps switch
 persist.vendor.power.dfps.level=0
-
-#support night charge property
 persist.vendor.night.charge=true
-
-#For Test Factory Whether Calibrated
-#ACC/GYRO/ALS/PS/ALS_DARK/LUX_B/SAR/SAR_SECONDARY/...MAX_NUM=15
 persist.vendor.sensor.cali_sensor=111001100000000
-
-# gralloc4 log
 persist.log.tag.gralloc4=S
+persist.sys.gpo.version=4
+vendor.mtk.hbt.enabled=0
+persist.log.tag.Telecom=I
+persist.log.tag.BufferQueueDump=I
+persist.log.tag.BufferQueueProducer=I
+ro.mediatek.version.branch=alps-mp-t0.mssi1.tc8sp1
+ro.mediatek.version.release=alps-mp-t0.mp1.tc8sp1-V1_xiaomi.t0mp1.vf.sp.64.armv82_P2
+ro.mediatek.version.build.branch=
+persist.vendor.vzw_device_type=0
+persist.vendor.wfc.sys_wfc_support=1
+ro.vendor.customer_logpath=/data
+ro.vendor.have_aee_feature=0
+
+# Zygote
+ro.zygote.preload.enable=0
