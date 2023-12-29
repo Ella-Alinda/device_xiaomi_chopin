@@ -102,7 +102,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctrl
 
-<<<<<<< HEAD
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.1.vendor \
@@ -112,16 +111,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     libbluetooth_audio_session.vendor
-=======
-# Bluetooth Audio
-PRODUCT_PACKAGES += \
-	audio.sysbta.default \
-	android.hardware.bluetooth.audio-service-system
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/bluetooth/audio/config/sysbta_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysbta_audio_policy_configuration_7_0.xml \
-    $(LOCAL_PATH)/bluetooth/audio/config/sysbta_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysbta_audio_policy_configuration.xml
->>>>>>> 8ba2c1579c693567a8ab283b295af7e251373fb4
 
 # Build MT-PL-Utils
 PRODUCT_PACKAGES += \
@@ -480,7 +469,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
-<<<<<<< HEAD
 
 # USB
 PRODUCT_PACKAGES += \
@@ -508,5 +496,3 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi/)
-=======
->>>>>>> 8ba2c1579c693567a8ab283b295af7e251373fb4
