@@ -16,13 +16,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/exthm_chopin.mk \
-    $(LOCAL_DIR)/exthm_choping.mk
+    $(LOCAL_DIR)/evolution_chopin.mk
 
 COMMON_LUNCH_CHOICES := \
-    exthm_chopin-user \
-    exthm_chopin-userdebug \
-    exthm_chopin-eng \
-    exthm_choping-user \
-    exthm_choping-userdebug \
-    exthm_choping-eng
+    evolution_chopin-user \
+    evolution_chopin-userdebug \
+    evolution_chopin-eng
