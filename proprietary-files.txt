@@ -1064,7 +1064,7 @@ vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
 # Duraspeed
 etc/init/duraspeed.rc
 -framework/duraspeed.jar
-system_ext/priv-app/DuraSpeed/DuraSpeed.apk
+-system_ext/priv-app/DuraSpeed/DuraSpeed.apk
 
 # Engineer Mode
 -app/LocationEM2/LocationEM2.apk
@@ -1910,7 +1910,7 @@ vendor/thh/ta/isee_model.json
 vendor/bin/hw/vendor.xiaomi.hardware.vibratorfeature.service
 vendor/etc/init/vendor.xiaomi.hardware.vibratorfeature.service.rc
 vendor/etc/init/vendor.xiaomi.hardware.vibratorfeature@1.0-service.rc
-vendor/etc/vintf/manifest/vendor.xiaomi.hardware.vibratorfeature.service.xml
+-vendor/etc/vintf/manifest/vendor.xiaomi.hardware.vibratorfeature.service.xml
 vendor/lib64/vendor.hardware.vibratorfeature.IVibratorExt-V1-ndk_platform.so
 
 # WiFi
