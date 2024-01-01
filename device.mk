@@ -477,7 +477,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-V1-ndk_platform.vendor:64
+    android.hardware.vibrator-service.rosemary
 
 # VNDK
 PRODUCT_PACKAGES += \
