@@ -524,7 +524,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.rosemary
+    android.hardware.vibrator-service.chopin
 
 # VNDK
 PRODUCT_PACKAGES += \

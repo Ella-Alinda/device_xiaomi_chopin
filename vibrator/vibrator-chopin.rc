@@ -1,4 +1,4 @@
-service vendor.vibrator-rosemary /vendor/bin/hw/android.hardware.vibrator-service.rosemary
+service vendor.vibrator-chopin /vendor/bin/hw/android.hardware.vibrator-service.chopin
     class hal
     user system
     group system input
