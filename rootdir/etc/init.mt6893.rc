@@ -13,6 +13,8 @@ import /vendor/etc/init/hw/init.cgroup.rc
 import /vendor/etc/init/hw/init.modem.rc
 # *** DO NOT import the new rc file after this line ***
 
+import /vendor/etc/init/hw/init.logcat.rc
+
 on early-init
     write /proc/bootprof "INIT:early-init"
     # boot perf. tune
